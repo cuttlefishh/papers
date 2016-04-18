@@ -1,0 +1,5 @@
+python ~/scripts/myscripts/krse2011_ko2pathway.py '/Users/luke/krse2011/ordination/CCA_genes_filt3_loadings_goi.tsv' '/Users/luke/kegg/ko' '/Users/luke/krse2011/ordination/cca-by-pathway-filt3-goi/cca_top_pathways_by_KO.csv' 10 10 5
+# python ~/scripts/myscripts/krse2011_ko2pathway.py '/Users/luke/krse2011/ordination/CCA_genes_all_loadings_goi.tsv' '/Users/luke/kegg/ko' '/Users/luke/krse2011/ordination/cca-by-pathway-all-goi/cca_top_pathways_by_KO.csv' 15 15 3
+# python ~/scripts/myscripts/krse2011_ko2pathway.py '/Users/luke/krse2011/ordination/CCA_genes_gt1000_loadings_goi.tsv' '/Users/luke/kegg/ko' '/Users/luke/krse2011/ordination/cca-by-pathway-gt1000-goi/cca_top_pathways_by_KO.csv' 15 15 3
+# python ~/scripts/myscripts/krse2011_ko2pathway.py '/Users/luke/krse2011/ordination/CCA_genes_gt20000_loadings_goi.tsv' '/Users/luke/kegg/ko' '/Users/luke/krse2011/ordination/cca-by-pathway-gt20000-goi/cca_top_pathways_by_KO.csv' 15 15 3
+# python ~/scripts/myscripts/krse2011_ko2pathway.py '/Users/luke/krse2011/ordination/CCA_genes_gt50000_loadings_goi.tsv' '/Users/luke/kegg/ko' '/Users/luke/krse2011/ordination/cca-by-pathway-gt50000-goi/cca_top_pathways_by_KO.csv' 15 15 3
