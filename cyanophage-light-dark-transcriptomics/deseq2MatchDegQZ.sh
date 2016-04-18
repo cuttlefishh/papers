@@ -1,0 +1,10 @@
+perl ~/scripts/myscripts/deseq2MatchDeg.pl qzdeseq2Ho.updn.inf_dk_0h.ctr_dk_0h.csv genes_med4phm2.tsv > qzdeseq2Ho.updn.inf_dk_0h_vs_ctr.tsv
+perl ~/scripts/myscripts/deseq2MatchDeg.pl qzdeseq2Ho.updn.inf_dk_1h.ctr_dk_0h.csv genes_med4phm2.tsv > qzdeseq2Ho.updn.inf_dk_1h_vs_ctr.tsv
+perl ~/scripts/myscripts/deseq2MatchDeg.pl qzdeseq2Ho.updn.inf_dk_2h.ctr_dk_0h.csv genes_med4phm2.tsv > qzdeseq2Ho.updn.inf_dk_2h_vs_ctr.tsv
+perl ~/scripts/myscripts/deseq2MatchDeg.pl qzdeseq2Ho.updn.inf_dk_4h.ctr_dk_0h.csv genes_med4phm2.tsv > qzdeseq2Ho.updn.inf_dk_4h_vs_ctr.tsv
+perl ~/scripts/myscripts/deseq2MatchDeg.pl qzdeseq2Ho.updn.inf_dk_8h.ctr_dk_0h.csv genes_med4phm2.tsv > qzdeseq2Ho.updn.inf_dk_8h_vs_ctr.tsv
+perl ~/scripts/myscripts/deseq2MatchDeg.pl qzdeseq2Ho.updn.inf_lt_0h.ctr_lt_0h.csv genes_med4phm2.tsv > qzdeseq2Ho.updn.inf_lt_0h_vs_ctr.tsv
+perl ~/scripts/myscripts/deseq2MatchDeg.pl qzdeseq2Ho.updn.inf_lt_1h.ctr_lt_0h.csv genes_med4phm2.tsv > qzdeseq2Ho.updn.inf_lt_1h_vs_ctr.tsv
+perl ~/scripts/myscripts/deseq2MatchDeg.pl qzdeseq2Ho.updn.inf_lt_2h.ctr_lt_0h.csv genes_med4phm2.tsv > qzdeseq2Ho.updn.inf_lt_2h_vs_ctr.tsv
+perl ~/scripts/myscripts/deseq2MatchDeg.pl qzdeseq2Ho.updn.inf_lt_4h.ctr_lt_0h.csv genes_med4phm2.tsv > qzdeseq2Ho.updn.inf_lt_4h_vs_ctr.tsv
+perl ~/scripts/myscripts/deseq2MatchDeg.pl qzdeseq2Ho.updn.inf_lt_8h.ctr_lt_0h.csv genes_med4phm2.tsv > qzdeseq2Ho.updn.inf_lt_8h_vs_ctr.tsv
