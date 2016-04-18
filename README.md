@@ -1,8 +1,8 @@
-# papers
+# papers/
 
 Repository for code developed in the preparation of peer-reviewed scientific manuscripts by Luke Thompson and colleagues.
 
-## cyanophage-light-dark-transcriptomics
+## cyanophage-light-dark-transcriptomics/
 
 Thompson et al., "Light energy and electron flow in Prochlorococcus during cyanophage infection", in prep.
 
