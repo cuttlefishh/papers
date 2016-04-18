@@ -4,7 +4,7 @@ Repository for code developed in the preparation of peer-reviewed scientific man
 
 ## cyanophage-light-dark-transcriptomics
 
-Thompson et al., "", in prep.
+Thompson et al., "Light energy and electron flow in Prochlorococcus during cyanophage infection", in prep.
 
 Code retrieved from `~/lightdark` using these commands:
 
