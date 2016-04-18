@@ -1,6 +1,6 @@
 # papers/
 
-Repository for code developed in the preparation of peer-reviewed scientific manuscripts by Luke Thompson and colleagues.
+Repository for code developed by Luke Thompson and colleagues in the preparation of peer-reviewed scientific manuscripts.
 
 ## cyanophage-light-dark-transcriptomics/
 
