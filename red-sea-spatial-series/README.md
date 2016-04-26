@@ -1,2 +1,0 @@
-## red-sea-spatial-series
-
