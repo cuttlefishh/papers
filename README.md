@@ -4,7 +4,7 @@ Repository for code developed for and/or used in the preparation of peer-reviewe
 
 ## cyanophage-light-dark-transcriptomics/
 
-Thompson et al., "Light energy and electron flow in Prochlorococcus during cyanophage infection", in prep.
+Thompson et al., "Light energy and electron flow in _Prochlorococcus_ during cyanophage infection", in prep.
 
 Code retrieved from local directory `$HOME/lightdark/` using these commands:
 
@@ -18,7 +18,7 @@ Code retrieved from local directory `$HOME/lightdark/` using these commands:
 
 ## red-sea-single-cell-genomes/
 
-Thompson et al., "Single-cell genomics of Pelagibacter and Prochlorococcus from the Red Sea", in prep.
+Thompson et al., "Single-cell genomics of _Pelagibacter_ and _Prochlorococcus_ from the Red Sea", in prep.
 
 *STILL NEEDS TO BE COPIED --* Code retrieved from local directory `$HOME/singlecell/` using above commands to select files with extensions .sh, .pl, .py, and .R.
 
@@ -30,6 +30,6 @@ Code retrieved from local directory `$HOME/krse2011/` using above commands to se
 
 ## vibrio-fischeri-transcriptomics/
 
-Thompson et al., "Transcriptional characterization of Vibrio fischeri during colonization of juvenile Euprymna scolopes", in prep.
+Thompson et al., "Transcriptional characterization of _Vibrio fischeri_ during colonization of juvenile _Euprymna scolopes_", in prep.
 
 Code retrieved from local directory `$HOME/vibrio/` using above commands to select files with extensions .sh, .pl, .py, and .R.
