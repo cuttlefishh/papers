@@ -1,0 +1,10 @@
+perl ~/scripts/myscripts/noiseqCompDeg.pl mynoiseqHo.up.inf_lt_0h_vs_ctr.tsv mynoiseqHo.up.inf_lt_1h_vs_ctr.tsv mynoiseqHo.up.inf_lt_2h_vs_ctr.tsv mynoiseqHo.up.inf_lt_4h_vs_ctr.tsv mynoiseqHo.up.inf_lt_8h_vs_ctr.tsv mynoiseqHo.dn.inf_lt_0h_vs_ctr.tsv mynoiseqHo.dn.inf_lt_1h_vs_ctr.tsv mynoiseqHo.dn.inf_lt_2h_vs_ctr.tsv mynoiseqHo.dn.inf_lt_4h_vs_ctr.tsv mynoiseqHo.dn.inf_lt_8h_vs_ctr.tsv genes_med4phm2.tsv > inf_vs_ctr.lt.tsv
+
+perl ~/scripts/myscripts/noiseqCompDeg.pl mynoiseqHo.up.inf_dk_0h_vs_ctr.tsv mynoiseqHo.up.inf_dk_1h_vs_ctr.tsv mynoiseqHo.up.inf_dk_2h_vs_ctr.tsv mynoiseqHo.up.inf_dk_4h_vs_ctr.tsv mynoiseqHo.up.inf_dk_8h_vs_ctr.tsv mynoiseqHo.dn.inf_dk_0h_vs_ctr.tsv mynoiseqHo.dn.inf_dk_1h_vs_ctr.tsv mynoiseqHo.dn.inf_dk_2h_vs_ctr.tsv mynoiseqHo.dn.inf_dk_4h_vs_ctr.tsv mynoiseqHo.dn.inf_dk_8h_vs_ctr.tsv genes_med4phm2.tsv > inf_vs_ctr.dk.tsv
+
+perl ~/scripts/myscripts/noiseqCompDeg.pl mynoiseqHo.up.inf_lt_0h_vs_dk.tsv mynoiseqHo.up.inf_lt_1h_vs_dk.tsv mynoiseqHo.up.inf_lt_2h_vs_dk.tsv mynoiseqHo.up.inf_lt_4h_vs_dk.tsv mynoiseqHo.up.inf_lt_8h_vs_dk.tsv mynoiseqHo.dn.inf_lt_0h_vs_dk.tsv mynoiseqHo.dn.inf_lt_1h_vs_dk.tsv mynoiseqHo.dn.inf_lt_2h_vs_dk.tsv mynoiseqHo.dn.inf_lt_4h_vs_dk.tsv mynoiseqHo.dn.inf_lt_8h_vs_dk.tsv genes_med4phm2.tsv > lt_vs_dk.inf.tsv
+
+perl ~/scripts/myscripts/noiseqCompDeg.pl mynoiseqHo.up.ctr_lt_0h_vs_dk.tsv mynoiseqHo.up.ctr_lt_1h_vs_dk.tsv mynoiseqHo.up.ctr_lt_2h_vs_dk.tsv mynoiseqHo.up.ctr_lt_4h_vs_dk.tsv mynoiseqHo.up.ctr_lt_8h_vs_dk.tsv mynoiseqHo.dn.ctr_lt_0h_vs_dk.tsv mynoiseqHo.dn.ctr_lt_1h_vs_dk.tsv mynoiseqHo.dn.ctr_lt_2h_vs_dk.tsv mynoiseqHo.dn.ctr_lt_4h_vs_dk.tsv mynoiseqHo.dn.ctr_lt_8h_vs_dk.tsv genes_med4phm2.tsv > lt_vs_dk.ctr.tsv
+
+perl ~/scripts/myscripts/noiseqCompDeg.pl mynoiseqPh.up.inf_lt_0h_vs_dk.tsv mynoiseqPh.up.inf_lt_1h_vs_dk.tsv mynoiseqPh.up.inf_lt_2h_vs_dk.tsv mynoiseqPh.up.inf_lt_4h_vs_dk.tsv mynoiseqPh.up.inf_lt_8h_vs_dk.tsv mynoiseqPh.dn.inf_lt_0h_vs_dk.tsv mynoiseqPh.dn.inf_lt_1h_vs_dk.tsv mynoiseqPh.dn.inf_lt_2h_vs_dk.tsv mynoiseqPh.dn.inf_lt_4h_vs_dk.tsv mynoiseqPh.dn.inf_lt_8h_vs_dk.tsv genes_med4phm2.tsv > lt_vs_dk.ph.tsv
+

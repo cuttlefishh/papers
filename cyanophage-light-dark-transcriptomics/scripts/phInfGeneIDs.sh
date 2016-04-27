@@ -1,0 +1,10 @@
+perl -pe 's/[0-9]+,PHM2-0{0,2}([1-9].*)/$1/' phInfLtClust1of5.csv | grep -v ",c" > phInfLtClust1of5ID.csv 
+perl -pe 's/[0-9]+,PHM2-0{0,2}([1-9].*)/$1/' phInfLtClust2of5.csv | grep -v ",c" > phInfLtClust2of5ID.csv 
+perl -pe 's/[0-9]+,PHM2-0{0,2}([1-9].*)/$1/' phInfLtClust3of5.csv | grep -v ",c" > phInfLtClust3of5ID.csv 
+perl -pe 's/[0-9]+,PHM2-0{0,2}([1-9].*)/$1/' phInfLtClust4of5.csv | grep -v ",c" > phInfLtClust4of5ID.csv 
+perl -pe 's/[0-9]+,PHM2-0{0,2}([1-9].*)/$1/' phInfLtClust5of5.csv | grep -v ",c" > phInfLtClust5of5ID.csv 
+perl -pe 's/[0-9]+,PHM2-0{0,2}([1-9].*)/$1/' phInfDkClust1of5.csv | grep -v ",c" > phInfDkClust1of5ID.csv 
+perl -pe 's/[0-9]+,PHM2-0{0,2}([1-9].*)/$1/' phInfDkClust2of5.csv | grep -v ",c" > phInfDkClust2of5ID.csv 
+perl -pe 's/[0-9]+,PHM2-0{0,2}([1-9].*)/$1/' phInfDkClust3of5.csv | grep -v ",c" > phInfDkClust3of5ID.csv 
+perl -pe 's/[0-9]+,PHM2-0{0,2}([1-9].*)/$1/' phInfDkClust4of5.csv | grep -v ",c" > phInfDkClust4of5ID.csv 
+perl -pe 's/[0-9]+,PHM2-0{0,2}([1-9].*)/$1/' phInfDkClust5of5.csv | grep -v ",c" > phInfDkClust5of5ID.csv 
