@@ -3,7 +3,7 @@
 The basic organization of mapping files and observation tables is shown below:
 
 
-|                | Metadata table        | Observation table        | Rename to                  |
+|                | Metadata table        | Observation table        | Renamed to                 |
 |----------------|-----------------------|--------------------------|----------------------------|
 | Tara samples   | tara_metadata_SRF.tsv | tara_proch_all_SRF.csv   | proch_ogs_in_tara_srf.csv  |
 |                |                       | tara_pelag_all_SRF.csv   | pelag_ogs_in_tara_srf.csv  |
