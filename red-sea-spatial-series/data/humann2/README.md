@@ -1,4 +1,4 @@
-The files in this directory were generated with the following humann2 commands and additional scripts.
+HUMAnN2 output (not in this directory) were generated with the following humann2 commands and additional scripts.
 
 ### Custom ChocoPhlAn database
 
