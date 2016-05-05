@@ -4,27 +4,29 @@ AAA280B11	Pelagibacter	#NA	S002	#NA	IIIb	FALSE
 AAA280P20	Pelagibacter	#NA	S003	#NA	IIIb	FALSE				
 AAA288G21	Pelagibacter	#NA	S004	#NA	Ic	FALSE				
 AAA288N07	Pelagibacter	#NA	S005	#NA	Ic	FALSE				
+AAA288E13	Pelagibacter	#NA	#NA	#NA	Ic	FALSE				
+AAA240E13	Pelagibacter	#NA	#NA	#NA	Ic	FALSE				
 HIMB058	Pelagibacter	#NA	S006	#NA	II	FALSE				
 HIMB083	Pelagibacter	#NA	S007	Pelub83DRAFT	Ia	FALSE				
-HIMB114	Pelagibacter	SARE	S008	HIMB114	IIIa	FALSE				
+HIMB114	Pelagibacter	SARE	S008	HIMB114	IIIa	FALSE	21.46	-157.79		
 HIMB122	Pelagibacter	#NA	S009	#NA	Ia	FALSE				
 HIMB1321	Pelagibacter	#NA	S010	#NA	Ia	FALSE				
 HIMB140	Pelagibacter	#NA	S011	HIMB140	Ia	FALSE				
 HIMB4	Pelagibacter	#NA	S012	HIMB4	Ia	FALSE				
-HIMB5	Pelagibacter	SARF	S013	CP003809	Ia	FALSE				
-HIMB59	Pelagibacter	SARG	#NA	HIMB59b	V	FALSE				
-HTCC1002	Pelagibacter	SARA	S014	Ga0076703	Ia	FALSE				
+HIMB5	Pelagibacter	SARF	S013	CP003809	Ia	FALSE	21.46	-157.79		
+HIMB59	Pelagibacter	SARG	#NA	HIMB59b	V	FALSE	21.46	-157.79		
+HTCC1002	Pelagibacter	SARA	S014	Ga0076703	Ia	FALSE	44.65	-124.05	10	
 HTCC1013	Pelagibacter	#NA	S015	HTCC1013	Ia	FALSE				
 HTCC1016	Pelagibacter	#NA	S016	#NA	Ia	FALSE				
 HTCC1040	Pelagibacter	#NA	S017	#NA	Ia	FALSE				
-HTCC1062	Pelagibacter	SARB	S018	Ga0076388	Ia	FALSE				
+HTCC1062	Pelagibacter	SARB	S018	Ga0076388	Ia	FALSE				Giovannoni et al., 2005
 HTCC7211	Pelagibacter	SARC	S019	HTCC7211	Ia	FALSE				
-HTCC7214	Pelagibacter	#NA	S020	#NA	Ia	FALSE				
+HTCC7214	Pelagibacter	#NA	S020	#NA	Ia	FALSE	32.10	-64.30		
 HTCC7217	Pelagibacter	#NA	S021	#NA	Ia	FALSE				
 HTCC8051	Pelagibacter	#NA	S022	HTC8051	Ia	FALSE				
 HTCC9022	Pelagibacter	#NA	S023	HTCC9022	Ia	FALSE				
 HTCC9565	Pelagibacter	SARH	S024	HTCC9565	Ia	FALSE				
-IMCC9063	Pelagibacter	SARD	S025	NC_015380	IIIa	FALSE				Oh et al. (2011)
+IMCC9063	Pelagibacter	SARD	S025	NC_015380	IIIa	FALSE	79.00	11.31	0	Oh et al. (2011)
 Pelagibacter_SCGC_AAA795-A08	Pelagibacter	SA08	SA08	Pelagibacter_SCGC_AAA795-A08_contigs	Ia	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-A20	Pelagibacter	SA20	SA20	Pelagibacter_SCGC_AAA795-A20_contigs	Ia	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-B16	Pelagibacter	SB16	SB16	Pelagibacter_SCGC_AAA795-B16_contigs	Ib	TRUE	19.75	40.05	0	This study
@@ -32,14 +34,14 @@ Pelagibacter_SCGC_AAA795-C09	Pelagibacter	SC09	SC09	Pelagibacter_SCGC_AAA795-C09
 Pelagibacter_SCGC_AAA795-C10	Pelagibacter	SC10	SC10	Pelagibacter_SCGC_AAA795-C10_contigs	Ia	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-D22	Pelagibacter	SD22	SD22	Pelagibacter_SCGC_AAA795-D22_contigs	Ia	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-E07	Pelagibacter	SE07	SE07	Pelagibacter_SCGC_AAA795-E07_contigs	II	TRUE	19.75	40.05	0	This study
-Pelagibacter_SCGC_AAA795-E22	Pelagibacter	SE22	SE22	Pelagibacter_SCGC_AAA795-E22_contigs	Ib	TRUE	19.75	40.05	0	This study
-Pelagibacter_SCGC_AAA795-F16	Pelagibacter	SF16	SF16	Pelagibacter_SCGC_AAA795-F16_contigs	Ib	TRUE	19.75	40.05	0	This study
+Pelagibacter_SCGC_AAA795-E22	Pelagibacter	SE22	SE22	Pelagibacter_SCGC_AAA795-E22_contigs	Id	TRUE	19.75	40.05	0	This study
+Pelagibacter_SCGC_AAA795-F16	Pelagibacter	SF16	SF16	Pelagibacter_SCGC_AAA795-F16_contigs	Id	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-G15	Pelagibacter	SG15	SG15	Pelagibacter_SCGC_AAA795-G15_contigs	II	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-J21	Pelagibacter	SJ21	SJ21	Pelagibacter_SCGC_AAA795-J21_contigs	Ia	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-K18	Pelagibacter	SK18	SK18	Pelagibacter_SCGC_AAA795-K18_contigs	Ia	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-L23	Pelagibacter	SL23	SL23	Pelagibacter_SCGC_AAA795-L23_contigs	Ia	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-M18	Pelagibacter	SM18	SM18	Pelagibacter_SCGC_AAA795-M18_contigs	Ib	TRUE	19.75	40.05	0	This study
-Pelagibacter_SCGC_AAA795-M22	Pelagibacter	SM22	SM22	Pelagibacter_SCGC_AAA795-M22_contigs	Ib	TRUE	19.75	40.05	0	This study
+Pelagibacter_SCGC_AAA795-M22	Pelagibacter	SM22	SM22	Pelagibacter_SCGC_AAA795-M22_contigs	Id	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-N08	Pelagibacter	SN08	SN08	Pelagibacter_SCGC_AAA795-N08_contigs	Ia	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-N17	Pelagibacter	SN17	SN17	Pelagibacter_SCGC_AAA795-N17_contigs	II	TRUE	19.75	40.05	0	This study
 Pelagibacter_SCGC_AAA795-O19	Pelagibacter	SO19	SO19	Pelagibacter_SCGC_AAA795-O19_contigs	Ia	TRUE	19.75	40.05	0	This study
@@ -60,9 +62,9 @@ ALPI01	Prochlorococcus	PW11	P008	#NA	HLIV	FALSE	-7.52	-167.01	15	Malmstrom et al
 ALPJ01	Prochlorococcus	PW12	P009	#NA	HLIV	FALSE	-7.52	-167.01	15	Malmstrom et al., 2012
 ALPK01	Prochlorococcus	PW5	P010	#NA	HLIII	FALSE	-7.52	-167.01	15	Malmstrom et al., 2012
 ALPL01	Prochlorococcus	#NA	P011	#NA	#NA	FALSE	-7.52	-167.01	15	Malmstrom et al., 2012
-AS9601	Prochlorococcus	PROA	P012	Ga0076498	HLII	FALSE				
-EQPAC1	Prochlorococcus	#NA	P013	Ga0062502	HLI	FALSE	0.00	-180.00	30	
-GP2	Prochlorococcus	#NA	P014	Ga0062499	HLII	FALSE	8.00	136.00	150	
+AS9601	Prochlorococcus	PROA	P012	Ga0076498	HLII	FALSE	19.20	67.17	50	Kettler et al. 2007
+EQPAC1	Prochlorococcus	#NA	P013	Ga0062502	HLI	FALSE	0.00	-180.00	30	Roscoff Culture Collection
+GP2	Prochlorococcus	#NA	P014	Ga0062499	HLII	FALSE	8.00	136.00	150	Shimada et al., 1995
 HNLC1	Prochlorococcus	#NA	P015	Ga0082358	HLIV	FALSE				Rusch et al., 2010 PNAS
 HNLC2	Prochlorococcus	#NA	P016	Ga0082359	HLIII	FALSE				Rusch et al., 2010 PNAS
 JFKN01	Prochlorococcus	#NA	P017	#NA		FALSE	31.67	-64.17	60	Kashtan et al., 2014
@@ -152,48 +154,48 @@ JFNZ01	Prochlorococcus	#NA	P100	Ga0101182		FALSE	31.67	-64.17	60	Kashtan et al.,
 JFOA01	Prochlorococcus	#NA	P101	#NA		FALSE	31.67	-64.17	60	Kashtan et al., 2014
 JFOB01	Prochlorococcus	#NA	P102	#NA		FALSE	31.67	-64.17	60	Kashtan et al., 2014
 JFOC01	Prochlorococcus	#NA	P103	#NA		FALSE	31.67	-64.17	60	Kashtan et al., 2014
-JFOD01	Prochlorococcus	#NA	#NA	Ga0101186					60	Kashtan et al., 2014
+JFOD01	Prochlorococcus	#NA	#NA	Ga0101186		FALSE	31.67	-64.17	60	Kashtan et al., 2014
 JFOE01	Prochlorococcus	#NA	P104	#NA		FALSE	31.67	-64.17	60	Kashtan et al., 2014
-LG	Prochlorococcus	#NA	P105	Ga0062465	LLII/III	FALSE	28.98	-64.35	120	
-MED4	Prochlorococcus	PROB	#NA	NC_005072	HL I	FALSE				
-MIT0601	Prochlorococcus	#NA	P106	Ga0062473	LLII/III	FALSE	22.75	-158.00	125	
-MIT0602	Prochlorococcus	#NA	P107	Ga0062471	LLII/III	FALSE	22.75	-158.00	125	
-MIT0603	Prochlorococcus	#NA	P108	Ga0062464	LLII/III	FALSE	22.75	-158.00	125	
-MIT0604	Prochlorococcus	#NA	P109	Ga0062501	HLII	FALSE	22.75	-158.00	175	
-MIT0701	Prochlorococcus	#NA	P110	Ga0062466	LLIV	FALSE	-13.45	-0.04	150	
-MIT0702	Prochlorococcus	#NA	P111	Ga0062461	LLIV	FALSE	-13.45	-0.04	150	
-MIT0703	Prochlorococcus	#NA	P112	Ga0062460	LLIV	FALSE	-13.45	-0.04	150	
-MIT0801	Prochlorococcus	#NA	P113	Ga0062455	LLI	FALSE	31.67	-64.17	40	
-MIT9107	Prochlorococcus	#NA	P114	Ga0062505	HLII	FALSE	-15.00	-135.00	25	
-MIT9116	Prochlorococcus	#NA	P115	Ga0062503	HLII	FALSE	-15.00	-135.00	25	
-MIT9123	Prochlorococcus	#NA	P116	Ga0062472	HLII	FALSE	-15.00	-135.00	25	
-MIT9201	Prochlorococcus	#NA	P117	Ga0062500	HLII	FALSE	-12.00	-145.42	0	
-MIT9202	Prochlorococcus	PROC	P118	Ga0076803	HLII	FALSE				
-MIT9211	Prochlorococcus	PROD	P119	Ga0076499	LLII/III	FALSE				
-MIT9215	Prochlorococcus	PROE	P120	Ga0065692	HLII	FALSE				
-MIT9301	Prochlorococcus	PROF	P121	Ga0076500	HLII	FALSE				
-MIT9302	Prochlorococcus	#NA	P122	Ga0062504	HLII	FALSE	34.76	-66.19	100	
-MIT9303	Prochlorococcus	PROG	P123	Ga0076501	LLIV	FALSE				
-MIT9311	Prochlorococcus	#NA	P124	Ga0062462	HLII	FALSE	37.51	-64.24	135	
-MIT9312	Prochlorococcus	PROH	P125	NC_007577	HLII	FALSE				
-MIT9313	Prochlorococcus	PROI	P126	NC_005071	LLIV	FALSE				
-MIT9314	Prochlorococcus	#NA	P127	Ga0062474	HLII	FALSE	37.51	-64.24	180	
-MIT9321	Prochlorococcus	#NA	P128	Ga0062467	HLII	FALSE	1.00	-92.00	50	
-MIT9322	Prochlorococcus	#NA	P129	Ga0062463	HLII	FALSE	0.27	-93.00	0	
-MIT9401	Prochlorococcus	#NA	P130	Ga0062470	HLII	FALSE	35.50	-70.40	0	
-MIT9515	Prochlorococcus	PROJ	P131	Ga0067215	HLI	FALSE				
-NATL1A	Prochlorococcus	PROK	P132	Ga0067212	LLI	FALSE				
-NATL2A	Prochlorococcus	PROL	P133	NC_007335	LLI	FALSE				
-PAC1	Prochlorococcus	#NA	P134	Ga0062468	LLI	FALSE	22.75	-158.00	100	
+LG	Prochlorococcus	#NA	P105	Ga0062465	LLII/III	FALSE	28.98	-64.35	120	Chisholm et al 1992
+MED4	Prochlorococcus	PROB	#NA	NC_005072	HLI	FALSE	43.20	6.87	5	Rocap et al. 2003, Kettler et al. 2007
+MIT0601	Prochlorococcus	#NA	P106	Ga0062473	LLII/III	FALSE	22.75	-158.00	125	Biller et al. 2014
+MIT0602	Prochlorococcus	#NA	P107	Ga0062471	LLII/III	FALSE	22.75	-158.00	125	Biller et al. 2014
+MIT0603	Prochlorococcus	#NA	P108	Ga0062464	LLII/III	FALSE	22.75	-158.00	125	Biller et al. 2014
+MIT0604	Prochlorococcus	#NA	P109	Ga0062501	HLII	FALSE	22.75	-158.00	175	Biller et al. 2014
+MIT0701	Prochlorococcus	#NA	P110	Ga0062466	LLIV	FALSE	-13.45	-0.04	150	Biller et al. 2014
+MIT0702	Prochlorococcus	#NA	P111	Ga0062461	LLIV	FALSE	-13.45	-0.04	150	Biller et al. 2014
+MIT0703	Prochlorococcus	#NA	P112	Ga0062460	LLIV	FALSE	-13.45	-0.04	150	Biller et al. 2014
+MIT0801	Prochlorococcus	#NA	P113	Ga0062455	LLI	FALSE	31.67	-64.17	40	Biller et al. 2014
+MIT9107	Prochlorococcus	#NA	P114	Ga0062505	HLII	FALSE	-15.00	-135.00	25	Urbach et al., 1998
+MIT9116	Prochlorococcus	#NA	P115	Ga0062503	HLII	FALSE	-15.00	-135.00	25	Rocap et al., 2002
+MIT9123	Prochlorococcus	#NA	P116	Ga0062472	HLII	FALSE	-15.00	-135.00	25	Rocap et al., 2002
+MIT9201	Prochlorococcus	#NA	P117	Ga0062500	HLII	FALSE	-12.00	-145.42	0	Moore et al. 1999
+MIT9202	Prochlorococcus	PROC	P118	Ga0076803	HLII	FALSE	-12.00	-145.42	79	Moore et al. 1999
+MIT9211	Prochlorococcus	PROD	P119	Ga0076499	LLII/III	FALSE	0.00	-139.97	83	Kettler et al. 2007
+MIT9215	Prochlorococcus	PROE	P120	Ga0065692	HLII	FALSE	0.00	-139.97	0	Kettler et al. 2007
+MIT9301	Prochlorococcus	PROF	P121	Ga0076500	HLII	FALSE			90	Kettler et al. 2007
+MIT9302	Prochlorococcus	#NA	P122	Ga0062504	HLII	FALSE	34.76	-66.19	100	Moore et al. 1998
+MIT9303	Prochlorococcus	PROG	P123	Ga0076501	LLIV	FALSE	34.76	-66.19	100	Kettler et al. 2007
+MIT9311	Prochlorococcus	#NA	P124	Ga0062462	HLII	FALSE	37.51	-64.24	135	Rocap et al., 2002
+MIT9312	Prochlorococcus	PROH	P125	NC_007577	HLII	FALSE	37.50	-68.23	135	Kettler et al. 2007
+MIT9313	Prochlorococcus	PROI	P126	NC_005071	LLIV	FALSE	37.50	-68.23	135	Rocap et al. 2003, Kettler et al. 2007
+MIT9314	Prochlorococcus	#NA	P127	Ga0062474	HLII	FALSE	37.51	-64.24	180	Rocap et al., 2002
+MIT9321	Prochlorococcus	#NA	P128	Ga0062467	HLII	FALSE	1.00	-92.00	50	Rocap et al., 2002
+MIT9322	Prochlorococcus	#NA	P129	Ga0062463	HLII	FALSE	0.27	-93.00	0	Rocap et al., 2002
+MIT9401	Prochlorococcus	#NA	P130	Ga0062470	HLII	FALSE	35.50	-70.40	0	Rocap et al., 2002
+MIT9515	Prochlorococcus	PROJ	P131	Ga0067215	HLI	FALSE			15	Kettler et al. 2007
+NATL1A	Prochlorococcus	PROK	P132	Ga0067212	LLI	FALSE	38.54	-39.85	30	Kettler et al. 2007
+NATL2A	Prochlorococcus	PROL	P133	NC_007335	LLI	FALSE	38.98	-40.55	10	Kettler et al. 2007
+PAC1	Prochlorococcus	#NA	P134	Ga0062468	LLI	FALSE	22.75	-158.00	100	Parpais et al. 1996, Penno et al. 2000
 Prochlorococcus_SCGC_AAA795-F05	Prochlorococcus	PF05	PF05	Prochlorococcus_SCGC_AAA795-F05_contigs	HLII	TRUE	19.75	40.05	0	This study
 Prochlorococcus_SCGC_AAA795-I06	Prochlorococcus	PI06	PI06	Prochlorococcus_SCGC_AAA795-I06_contigs	HLII	TRUE	19.75	40.05	0	This study
 Prochlorococcus_SCGC_AAA795-I15	Prochlorococcus	PI15	PI15	Prochlorococcus_SCGC_AAA795-I15_contigs	HLII	TRUE	19.75	40.05	0	This study
 Prochlorococcus_SCGC_AAA795-J16	Prochlorococcus	PJ16	PJ16	Prochlorococcus_SCGC_AAA795-J16_contigs	HLII	TRUE	19.75	40.05	0	This study
 Prochlorococcus_SCGC_AAA795-M23	Prochlorococcus	PM23	PM23	Prochlorococcus_SCGC_AAA795-M23_contigs	HLII	TRUE	19.75	40.05	0	This study
 PRS50	Prochlorococcus	PR50	#NA	#NA	HLII	TRUE	19.75	40.05	0	Shibl et al. (unpublished)
-SB	Prochlorococcus	#NA	P135	Ga0062469	HLII	FALSE	35.00	138.30	40	
-SS120	Prochlorococcus	PROM	P136	Ga0076506	LLII/III	FALSE				
-SS2	Prochlorococcus	#NA	P137	Ga0062475	LLII/III	FALSE	28.98	-64.35	120	
-SS35	Prochlorococcus	#NA	P138	Ga0062478	LLII/III	FALSE	28.98	-64.35	120	
-SS51	Prochlorococcus	#NA	P139	Ga0062477	LLII/III	FALSE	28.98	-64.35	120	
-SS52	Prochlorococcus	#NA	P140	Ga0062476	LLII/III	FALSE	28.98	-64.35	120	
+SB	Prochlorococcus	#NA	P135	Ga0062469	HLII	FALSE	35.00	138.30	40	Shimada et al. 1995
+SS120	Prochlorococcus	PROM	P136	Ga0076506	LLII/III	FALSE	28.99	-64.35	120	Dufresne et al. 2003, Kettler et al. 2007
+SS2	Prochlorococcus	#NA	P137	Ga0062475	LLII/III	FALSE	28.98	-64.35	120	Rocap et al., 2002
+SS35	Prochlorococcus	#NA	P138	Ga0062478	LLII/III	FALSE	28.98	-64.35	120	Rocap et al., 2002
+SS51	Prochlorococcus	#NA	P139	Ga0062477	LLII/III	FALSE	28.98	-64.35	120	Rocap et al., 2002
+SS52	Prochlorococcus	#NA	P140	Ga0062476	LLII/III	FALSE	28.98	-64.35	120	Rocap et al., 2002
