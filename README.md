@@ -1,5 +1,3 @@
-This is a repository for code developed for and/or used in the preparation of peer-reviewed scientific manuscripts.
-
 #### 2016
 
 **red-sea-spatial-series**
