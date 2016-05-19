@@ -6,11 +6,11 @@
 
 **cyanophage-light-dark-transcriptomics**
 
-* Thompson, Zeng et al., "Light energy and electron flow in _Prochlorococcus_ during cyanophage infection", in prep.
+* Thompson & Zeng et al., "Photosynthetic electron transport in _Prochlorococcus_ during cyanophage infection", _PLOS ONE_, in review.
 
 **vibrio-fischeri-transcriptomics**
 
-* Thompson, Nikolakakis et al., "Transcriptional characterization of _Vibrio fischeri_ during colonization of juvenile _Euprymna scolopes_", in prep.
+* Thompson & Nikolakakis et al., "Transcriptional characterization of _Vibrio fischeri_ during colonization of juvenile _Euprymna scolopes_", in prep.
 
 
 <!--
