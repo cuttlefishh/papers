@@ -6,7 +6,7 @@
 
 **cyanophage-light-dark-transcriptomics**
 
-* Thompson & Zeng et al., "Gene expression patterns during light and dark infection of Prochlorococcus by cyanophage", _PLOS ONE_, in revision.
+* Thompson & Zeng et al., "Gene expression patterns during light and dark infection of _Prochlorococcus_ by cyanophage", _PLOS ONE_, in revision.
 
 **vibrio-fischeri-transcriptomics**
 
