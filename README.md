@@ -2,11 +2,11 @@
 
 **red-sea-spatial-series**
 
-* Thompson et al., "Metagenomic covariation along densely sampled environmental gradients in the Red Sea", _ISME J_, in revision.
+* Thompson et al., "Metagenomic covariation along densely sampled environmental gradients in the Red Sea", _ISME J_, in press.
 
 **cyanophage-light-dark-transcriptomics**
 
-* Thompson & Zeng et al., "Photosynthetic electron transport in _Prochlorococcus_ during cyanophage infection", _PLOS ONE_, in review.
+* Thompson & Zeng et al., "Gene expression patterns during light and dark infection of Prochlorococcus by cyanophage", _PLOS ONE_, in revision.
 
 **vibrio-fischeri-transcriptomics**
 
