@@ -1,3 +1,9 @@
+#### 2017
+
+**vibrio-fischeri-transcriptomics**
+
+* Thompson & Nikolakakis et al., "Transcriptional characterization of _Vibrio fischeri_ during colonization of juvenile _Euprymna scolopes_", in review.
+
 #### 2016
 
 **red-sea-spatial-series**
@@ -7,10 +13,6 @@
 **cyanophage-light-dark-transcriptomics**
 
 * Thompson & Zeng et al., "Gene expression patterns during light and dark infection of _Prochlorococcus_ by cyanophage", _PLOS ONE_ 11(10):e0165375, doi:10.1371/journal.pone.0165375, 2016.
-
-**vibrio-fischeri-transcriptomics**
-
-* Thompson & Nikolakakis et al., "Transcriptional characterization of _Vibrio fischeri_ during colonization of juvenile _Euprymna scolopes_", in review.
 
 
 <!--
