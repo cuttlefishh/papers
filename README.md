@@ -8,11 +8,13 @@
 
 **red-sea-spatial-series**
 
-* Thompson et al., "Metagenomic covariation along densely sampled environmental gradients in the Red Sea", _ISME J_, doi:10.1038/ismej.2016.99, 2016.
+* Thompson et al., "Metagenomic covariation along densely sampled environmental gradients in the Red Sea", _ISME J_, 
+[doi:10.1038/ismej.2016.99](http://www.nature.com/ismej/journal/v11/n1/full/ismej201699a.html), 2016.
 
 **cyanophage-light-dark-transcriptomics**
 
-* Thompson & Zeng et al., "Gene expression patterns during light and dark infection of _Prochlorococcus_ by cyanophage", _PLOS ONE_ 11(10):e0165375, doi:10.1371/journal.pone.0165375, 2016.
+* Thompson & Zeng et al., "Gene expression patterns during light and dark infection of _Prochlorococcus_ by cyanophage", 
+_PLOS ONE_ 11(10):e0165375, [doi:10.1371/journal.pone.0165375](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0165375), 2016.
 
 
 <!--
