@@ -2,19 +2,23 @@
 
 **red-sea-spatial-series**
 
-* Thompson et al., "Metagenomic covariation along densely sampled environmental gradients in the Red Sea", _ISME J_, in press.
+* Thompson et al., "Metagenomic covariation along densely sampled environmental gradients in the Red Sea", _ISME J_, doi:10.1038/ismej.2016.99, 2016.
 
 **cyanophage-light-dark-transcriptomics**
 
-* Thompson & Zeng et al., "Gene expression patterns during light and dark infection of _Prochlorococcus_ by cyanophage", _PLOS ONE_, in revision.
+* Thompson & Zeng et al., "Gene expression patterns during light and dark infection of _Prochlorococcus_ by cyanophage", _PLOS ONE_ 11(10):e0165375, doi:10.1371/journal.pone.0165375, 2016.
 
 **vibrio-fischeri-transcriptomics**
 
-* Thompson & Nikolakakis et al., "Transcriptional characterization of _Vibrio fischeri_ during colonization of juvenile _Euprymna scolopes_", in prep.
+* Thompson & Nikolakakis et al., "Transcriptional characterization of _Vibrio fischeri_ during colonization of juvenile _Euprymna scolopes_", in review.
 
 
 <!--
 #### Manuscripts In Preparation
+
+**earth-microbiome-project**
+
+* Refer to main EMP repo: <https://github.com/biocore/emp>
 
 **red-sea-single-cell-genomes**
 
