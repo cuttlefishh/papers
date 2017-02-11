@@ -1,20 +1,20 @@
+### Code repositories corresponding to manuscripts published or in preparation
+
 #### 2017
 
 **vibrio-fischeri-transcriptomics**
 
-* Thompson & Nikolakakis et al., "Transcriptional characterization of _Vibrio fischeri_ during colonization of juvenile _Euprymna scolopes_", in review.
+* Thompson LR, Nikolakakis K, Pan S, Reed J, Knight R, and Ruby EG. Transcriptional characterization of _Vibrio fischeri_ during colonization of juvenile _Euprymna scolopes_. _Environmental Microbiology_, [doi:10.1111/1462-2920.13684](http://dx.doi.org/10.1111/1462-2920.13684), 2017.
 
 #### 2016
 
 **red-sea-spatial-series**
 
-* Thompson et al., "Metagenomic covariation along densely sampled environmental gradients in the Red Sea", _ISME J_, 
-[doi:10.1038/ismej.2016.99](http://www.nature.com/ismej/journal/v11/n1/full/ismej201699a.html), 2016.
+* Thompson LR, Williams GJ, Haroon MF, Shibl A, Larsen P, Shorenstein J, Knight R, and Stingl U. Metagenomic covariation along densely sampled environmental gradients in the Red Sea. _The ISME Journal_, [doi:10.1038/ismej.2016.99](http://dx.doi.org/10.1038/ismej.2016.99), 2016.
 
 **cyanophage-light-dark-transcriptomics**
 
-* Thompson & Zeng et al., "Gene expression patterns during light and dark infection of _Prochlorococcus_ by cyanophage", 
-_PLOS ONE_ 11(10):e0165375, [doi:10.1371/journal.pone.0165375](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0165375), 2016.
+* Thompson LR, Zeng Q, and Chisholm SW. Gene expression patterns during light and dark infection of _Prochlorococcus_ by cyanophage. _PLOS ONE_ 11(10):e0165375, [doi:10.1371/journal.pone.0165375](http://dx.doi.org/10.1371/journal.pone.0165375), 2016.
 
 
 <!--
