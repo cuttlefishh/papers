@@ -1,4 +1,4 @@
-### Code repositories corresponding to manuscripts published or in preparation
+### Code repositories for manuscripts published or in preparation
 
 #### 2017
 
