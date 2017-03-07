@@ -1,15 +1,15 @@
-### HUMAnN2 of Red Sea metagenomes using custom pangenome database
+## HUMAnN2 of Red Sea metagenomes using custom pangenome database
 
-#### KO observation tables
+### KO observation tables
 
 * `krse2011_humann2_ko_cpm_strat.tsv` KO relative abundances "stratified" by pangenome
 * `krse2011_humann2_ko_cpm_unstrat.tsv` KO relative abundances summed over all pangenomes ("unstratified")
 
-#### Methods
+### Methods
 
 We applied [HUMAnN2](https://bitbucket.org/biobakery/humann2) to profile 45 metagenomes collected during the 2011 KAUST Red Sea Expedition, which were previously analyzed using HUMAnN1 ([Thompson et al., 2016](http://dx.doi.org/10.1038/ismej.2016.99)). 
 
-##### Main processing
+#### Main processing
 
 MetaPhlAn2 was run on all samples as a "joint prescreen" for all samples. In other words, if a species was detected in any of the 45 metagenomes, then its pangenome was included in the analysis of all samples. This "dataset-specific" (versus sample-specific) pangenome was used to add robustness to missing MetaPhlAn2 marker genes, which we expect to be more common in less-well-characterized communities. Pangenomes (388) were selected in this manner, including many examples from known marine clades, such as *Nitrospina*, *Nitrospira*, *Prochlorococcus*, *Synechococcus*, *Synechocystis*, *Candidatus* Pelagibacter, alphaproteobacterium (SAR11 clade), *Polymorphum*, and SAR116 cluster. Each sample was then profiled against the custom pangenome database and UniRef50 protein database via tiered search. 
 
@@ -72,7 +72,7 @@ $ humann2 -i sample01.1.prinseq.fasta -o . -v --threads 1 --bypass-prescreen --t
 $ humann2 -i ${PBS_ARRAYID} -o . -v --threads 8 --memory maximum --bypass-prescreen --bypass-nucleotide-index --nucleotide-database sample01.1.prinseq_bowtie2_index --protein-database uniref
 ```
 
-##### Post-processing
+#### Post-processing
 
 UniRef50 abundances were regrouped to KO abundances using UniRef50-to-KO mapping to enable comparison with HUMAnN1-based profiles. KO abundances were then normalized over total reads using the counts per million (CPM) method. UNMAPPED and UNGROUPED reads were included in the total counts, which gives an indication of the total mass of reads assigned (or not) to KOs across samples.
 
