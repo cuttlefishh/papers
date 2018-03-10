@@ -1,24 +1,22 @@
 ### Code repositories for manuscripts published or in preparation
 
-Repositories are located in **github.com/cuttlefishh/papers** unless otherwise noted.
-
 #### 2017
 
-**github.com/biocore/emp**
+**[github.com/biocore/emp](https://github.com/biocore/emp)**
 
 Thompson LR, Sanders JG, et al. A communal catalogue reveals Earth's multiscale microbial diversity. *Nature*, [doi:10.1038/nature24621](http://doi.org/10.1038/nature24621), 2017.
 
-**vibrio-fischeri-transcriptomics**
+**[vibrio-fischeri-transcriptomics](https://github.com/cuttlefishh/papers/tree/master/vibrio-fischeri-transcriptomics)**
 
 Thompson LR, Nikolakakis K, Pan S, Reed J, Knight R, and Ruby EG. Transcriptional characterization of _Vibrio fischeri_ during colonization of juvenile _Euprymna scolopes_. _Environmental Microbiology_, [doi:10.1111/1462-2920.13684](http://dx.doi.org/10.1111/1462-2920.13684), 2017.
 
 #### 2016
 
-**red-sea-spatial-series**
+**[red-sea-spatial-series](https://github.com/cuttlefishh/papers/tree/master/red-sea-spatial-series)**
 
 Thompson LR, Williams GJ, Haroon MF, Shibl A, Larsen P, Shorenstein J, Knight R, and Stingl U. Metagenomic covariation along densely sampled environmental gradients in the Red Sea. _The ISME Journal_, [doi:10.1038/ismej.2016.99](http://dx.doi.org/10.1038/ismej.2016.99), 2016.
 
-**cyanophage-light-dark-transcriptomics**
+**[cyanophage-light-dark-transcriptomics](https://github.com/cuttlefishh/papers/tree/master/cyanophage-light-dark-transcriptomics)**
 
 Thompson LR, Zeng Q, and Chisholm SW. Gene expression patterns during light and dark infection of _Prochlorococcus_ by cyanophage. _PLOS ONE_ 11(10):e0165375, [doi:10.1371/journal.pone.0165375](http://dx.doi.org/10.1371/journal.pone.0165375), 2016.
 
