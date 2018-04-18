@@ -1,8 +1,10 @@
-### Code repositories for manuscripts published or in preparation
+## papers
+
+Code for published manuscripts by Thompson et al.
 
 #### 2017
 
-**[github.com/biocore/emp](https://github.com/biocore/emp)**
+**[biocore/emp](https://github.com/biocore/emp)**
 
 Thompson LR, Sanders JG, et al. A communal catalogue reveals Earth's multiscale microbial diversity. *Nature*, [doi:10.1038/nature24621](http://doi.org/10.1038/nature24621), 2017.
 
