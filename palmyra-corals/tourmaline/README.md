@@ -1,11 +1,21 @@
 ## Tourmaline DADA2 workflow
 
-### Format metadata
+### Clone Tourmaline repository once for each project
 
-Master mapping file from Austin (14693_analysis_mapping_cleaned.tsv); then added coral_health_plus_year, position_plus_year, and species_code (14693_analysis_mapping_cleaned_LT.tsv); then split into Bleaching and Corallimorph:
+```
+cd $HOME/carter
+git clone https://github.com/NOAA-AOML/tourmaline
+mv tourmaline tourmaline-bleaching
+git clone https://github.com/NOAA-AOML/tourmaline
+mv tourmaline tourmaline-corallimorph
+```
+
+### Metadata setup
+
+The metadata (mapping) file was downloaded from Qiita study [10798](https://qiita.ucsd.edu/study/description/10798); added to this were the columns `coral_health_plus_year`, `position_plus_year`, and `species_code`; the resulting file was saved as `14693_analysis_mapping_cleaned_LT.txt`. This file was the split by project (Bleaching, Corallimorph) and the columns `zone` and `zone_plus_year` were added to the Corallimorph metadata file:
 
 ```python
-cd /Users/luke.thompson/carter/metadata
+cd $HOME/carter/metadata
 import pandas as pd
 df = pd.read_csv('14693_analysis_mapping_cleaned_LT.txt', sep='\t', index_col=0)
 df_b = df[df.stressor == 'Bleaching']
@@ -19,193 +29,91 @@ df_b.to_csv('14693_analysis_mapping_cleaned_bleaching.txt', sep='\t')
 df_c.to_csv('14693_analysis_mapping_cleaned_corallimorph.txt', sep='\t')
 ```
 
-### Import metadata
+The final metadata files are `14693_analysis_mapping_cleaned_bleaching.txt` and `14693_analysis_mapping_cleaned_corallimorph.txt`.
 
-Mapping files for demultiplexing are `10798_prep_4161_qiime_20180418-105730.txt` (1-3) and `10798_prep_4163_qiime_20180418-105731.txt` (4-6) downloaded from Qiita https://qiita.ucsd.edu/study/description/10798. Metadata files for analysis are `14693_analysis_mapping_cleaned_bleaching.txt` and `14693_analysis_mapping_cleaned_corallimorph.txt` described above.
-
-Set up data and imported directories:
+Set up data directories and create links to metadata files:
 
 ```
-cd /home/luth1104/carter/tourmaline-bleaching/00-data
-ln -s /home/luth1104/carter/metadata/14693_analysis_mapping_cleaned_bleaching.txt metadata.tsv
-cd /home/luth1104/carter/tourmaline-corallimorph/00-data
-ln -s /home/luth1104/carter/metadata/14693_analysis_mapping_cleaned_corallimorph.txt metadata.tsv
+mkdir $HOME/carter/tourmaline-bleaching/00-data
+cd $HOME/carter/tourmaline-bleaching/00-data
+ln -s $HOME/carter/metadata/14693_analysis_mapping_cleaned_bleaching.txt metadata.tsv
+
+mkdir $HOME/carter/tourmaline-corallimorph/00-data
+cd $HOME/carter/tourmaline-corallimorph/00-data
+ln -s $HOME/carter/metadata/14693_analysis_mapping_cleaned_corallimorph.txt metadata.tsv
 ```
 
-### Import fastq
+### Fastq setup
 
-Sequences from Qiita study 10798 were found on Barnacle. They are EMP format so we can import them as a QIIME 2 artifact using `qiime tools import --type EMPPairedEndSequences`.
-
-NOTE: 1-3 and 4-6 have to be demultiplexed SEPARATELY: first import to EMPPairedEndSequences, then demultiplex to PairedEndSequencesWithQuality, which is required by Deblur and DADA2. Then I can split them up by "bleaching" and "corallimorph" projects before running Tourmaline separately for the two projects.
-
-Make symbolic links:
+After demultiplexing using `qiime demux emp-paired` (see Tourmaline recipe TBD), create fastq manifest files (see QIIME 2 documentation) and create links to them:
 
 ```
-cd /home/luth1104/carter/fastq/Carter_Coral_1-3
-ln -s /sequencing/ucsd/complete_runs/171120_M05314_0042_000000000-B6H23/Carter_Coral_1-3_S1_L001_I1_001.fastq.gz barcodes.fastq.gz
-ln -s /sequencing/ucsd/complete_runs/171120_M05314_0042_000000000-B6H23/Carter_Coral_1-3_S1_L001_R1_001.fastq.gz forward.fastq.gz
-ln -s /sequencing/ucsd/complete_runs/171120_M05314_0042_000000000-B6H23/Carter_Coral_1-3_S1_L001_R2_001.fastq.gz reverse.fastq.gz
-cd /home/luth1104/carter/fastq/Carter_Coral_4-6
-ln -s /sequencing/ucsd/complete_runs/171121_M05314_0043_000000000-BH92J/Carter_Coral_4-6_1_burned_S1_L001_I1_001.fastq.gz barcodes.fastq.gz
-ln -s /sequencing/ucsd/complete_runs/171121_M05314_0043_000000000-BH92J/Carter_Coral_4-6_1_burned_S1_L001_R1_001.fastq.gz forward.fastq.gz
-ln -s /sequencing/ucsd/complete_runs/171121_M05314_0043_000000000-BH92J/Carter_Coral_4-6_1_burned_S1_L001_R2_001.fastq.gz reverse.fastq.gz
+cd $HOME/carter/tourmaline-bleaching/00-data
+ln -s $HOME/carter/fastq/manifest_bleaching_se.csv manifest_se.csv
+ln -s $HOME/carter/fastq/manifest_bleaching_pe.csv manifest_pe.csv
+cd $HOME/carter/tourmaline-corallimorph/00-data
+ln -s $HOME/carter/fastq/manifest_corallimorph_se.csv manifest_se.csv
+ln -s $HOME/carter/fastq/manifest_corallimorph_pe.csv manifest_pe.csv
 ```
 
-Import EMP paired-end sequences:
+### Reference database
+
+Import SILVA 16S 97% reference sequences and taxonomy for QIIME 2. Download SILVA Release 132 QIIME version to Barnacle:
 
 ```
-cd /home/luth1104/carter/fastq
-qiime tools import \
-  --type EMPPairedEndSequences \
-  --input-path Carter_Coral_1-3 \
-  --output-path emp_paired_end_sequences_1-3.qza
-qiime tools import \
-  --type EMPPairedEndSequences \
-  --input-path Carter_Coral_4-6 \
-  --output-path emp_paired_end_sequences_4-6.qza
-```
-
-Demultiplex EMP paired-end sequences:
-
-```
-qiime demux emp-paired \
-  --m-barcodes-file ../metadata/10798_prep_4161_qiime_20180418-105730.txt \
-  --m-barcodes-column BarcodeSequence \
-  --i-seqs emp_paired_end_sequences_1-3.qza \
-  --o-per-sample-sequences demux_1-3.qza \
-  --p-rev-comp-barcodes \
-  --p-rev-comp-mapping-barcodes
-qiime demux emp-paired \
-  --m-barcodes-file ../metadata/10798_prep_4163_qiime_20180418-105731.txt \
-  --m-barcodes-column BarcodeSequence \
-  --i-seqs emp_paired_end_sequences_4-6.qza \
-  --o-per-sample-sequences demux_4-6.qza \
-  --p-rev-comp-barcodes \
-  --p-rev-comp-mapping-barcodes
-```
-
-Unzip demuxed sequences to get manifests:
-
-```
-unzip demux_1-3.qza
-mv ba93b5b8-c8cd-4fba-86c7-f0ef96a91e35/ demux_1-3
-unzip demux_4-6.qza
-mv 8664c70a-f92a-4937-8dca-ac6283f6cd34/ demux_4-6
-```
-
-Merge manifests:
-
-```
-echo "sample-id,absolute-filepath,direction" > /home/luth1104/carter/fastq/manifest_1-6.csv
-tail -n +2 /home/luth1104/carter/fastq/demux_1-3/data/MANIFEST | sed 's|,10798|,/home/luth1104/carter/fastq/demux_1-3/data/10798|' >> /home/luth1104/carter/fastq/manifest_1-6.csv
-tail -n +2 /home/luth1104/carter/fastq/demux_4-6/data/MANIFEST | sed 's|,10798|,/home/luth1104/carter/fastq/demux_4-6/data/10798|' >> /home/luth1104/carter/fastq/manifest_1-6.csv
-```
-
-Run `match_manifest_to_metadata.ipynb` on Mac (parameterized version: `~/scripts/myscripts/match_manifest_to_metadata.py`). Given a fastq manifest and a metadata file, this script will generate two new manfiests (one for paired-end, one for single-end) with samples correspoinding to the samples in the metadata file. Code:
-
-```
-import pandas as pd
-
-# input paths
-path_manifest = '/Users/luke.thompson/carter/metadata/manifest_1-6.csv'
-path_metadata_b = '/Users/luke.thompson/carter/metadata/14693_analysis_mapping_cleaned_bleaching.txt'
-path_metadata_c = '/Users/luke.thompson/carter/metadata/14693_analysis_mapping_cleaned_corallimorph.txt'
-
-# output paths
-path_manifest_b_pe = '/Users/luke.thompson/carter/metadata/manifest_bleaching_pe.csv'
-path_manifest_b_se = '/Users/luke.thompson/carter/metadata/manifest_bleaching_se.csv'
-path_manifest_c_pe = '/Users/luke.thompson/carter/metadata/manifest_corallimorph_pe.csv'
-path_manifest_c_se = '/Users/luke.thompson/carter/metadata/manifest_corallimorph_se.csv'
-
-# import manifest
-df_manifest = pd.read_csv(path_manifest, index_col=0)
-
-# import metadata
-df_metadata_b = pd.read_csv(path_metadata_b, index_col=0, sep='\t')
-df_metadata_c = pd.read_csv(path_metadata_c, index_col=0, sep='\t')
-
-# select manifest rows matching metadata sample ids (paired-end and single-end)
-df_manifest_b_pe = df_manifest.loc[df_metadata_b.index]
-df_manifest_b_se = df_manifest[df_manifest.direction == 'forward'].loc[df_metadata_b.index]
-df_manifest_c_pe = df_manifest.loc[df_metadata_c.index]
-df_manifest_c_se = df_manifest[df_manifest.direction == 'forward'].loc[df_metadata_c.index]
-
-# write to csv
-df_manifest_b_pe.to_csv(path_manifest_b_pe)
-df_manifest_b_se.to_csv(path_manifest_b_se)
-df_manifest_c_pe.to_csv(path_manifest_c_pe)
-df_manifest_c_se.to_csv(path_manifest_c_se)
-```
-
-Then scp these new manifest files to `barnacle:/home/luth1104/carter/fastq`. They will be the starting point for two Tourmaline instances. Make symbolic links to the manifests:
-
-```
-cd /home/luth1104/carter/tourmaline-bleaching/00-data
-ln -s /home/luth1104/carter/fastq/manifest_bleaching_se.csv manifest_se.csv
-ln -s /home/luth1104/carter/fastq/manifest_bleaching_pe.csv manifest_pe.csv
-cd /home/luth1104/carter/tourmaline-corallimorph/00-data
-ln -s /home/luth1104/carter/fastq/manifest_corallimorph_se.csv manifest_se.csv
-ln -s /home/luth1104/carter/fastq/manifest_corallimorph_pe.csv manifest_pe.csv
-```
-
-### Import SILVA 16S 97% and 99% reference sequences and taxonomy for QIIME 2
-
-Download SILVA v.132 QIIME version to Barnacle.
-
-```
-cd /home/luth1104/databases/silva
+cd $HOME/databases/silva
 wget https://www.arb-silva.de/fileadmin/silva_databases/qiime/Silva_132_release.zip
 unzip Silva_132_release.zip
 mv Silva_132_release silva_132_qiime
 ```
 
-Sequences and taxonomy are already in QIIME 2-compatible format. I will use the taxonomy file `taxonomy_7_levels.txt`, but note this can be switched to another at any time. Below is shown for 99% but subsequently I switched to 97% (done inside snakemake).
+Sequences and taxonomy are already in QIIME 2-compatible format. We are using the taxonomy file `taxonomy_7_levels.txt`.
 
 ```
-cd /home/luth1104/databases/qiime2/16s
-ln -s /home/luth1104/databases/silva/silva_132_qiime/rep_set/rep_set_16S_only/99/silva_132_99_16S.fna silva_132_99_16S.fna
-ln -s /home/luth1104/databases/silva/silva_132_qiime/taxonomy/16S_only/99/taxonomy_7_levels.txt silva_132_99_16S_taxonomy_7_levels.tsv
+cd $HOME/databases/qiime2/16s
+ln -s $HOME/databases/silva/silva_132_qiime/rep_set/rep_set_16S_only/99/silva_132_99_16S.fna silva_132_99_16S.fna
+ln -s $HOME/databases/silva/silva_132_qiime/taxonomy/16S_only/99/taxonomy_7_levels.txt silva_132_99_16S_taxonomy_7_levels.tsv
 qiime tools import --type 'FeatureData[Sequence]' --input-path silva_132_99_16S_sequences.fna --output-path silva_132_99_16S_sequences.qza
 qiime tools import --type 'FeatureData[Taxonomy]' --source-format HeaderlessTSVTaxonomyFormat --input-path silva_132_99_16S_taxonomy_7_levels.tsv --output-path silva_132_99_16S_taxonomy_7_levels.qza
 
-cd /home/luth1104/carter/tourmaline-bleaching/01-imported
-ln -s /home/luth1104/databases/qiime2/16s/silva_132_99_16S_sequences.qza refseqs.qza
-ln -s /home/luth1104/databases/qiime2/16s/silva_132_99_16S_taxonomy_7_levels.qza reftax.qza
-cd /home/luth1104/carter/tourmaline-corallimorph/01-imported
-ln -s /home/luth1104/databases/qiime2/16s/silva_132_99_16S_sequences.qza refseqs.qza
-ln -s /home/luth1104/databases/qiime2/16s/silva_132_99_16S_taxonomy_7_levels.qza reftax.qza
+cd $HOME/carter/tourmaline-bleaching/01-imported
+ln -s $HOME/databases/qiime2/16s/silva_132_99_16S_sequences.qza refseqs.qza
+ln -s $HOME/databases/qiime2/16s/silva_132_99_16S_taxonomy_7_levels.qza reftax.qza
+cd $HOME/carter/tourmaline-corallimorph/01-imported
+ln -s $HOME/databases/qiime2/16s/silva_132_99_16S_sequences.qza refseqs.qza
+ln -s $HOME/databases/qiime2/16s/silva_132_99_16S_taxonomy_7_levels.qza reftax.qza
 ```
 
 ### Run Tourmaline (dada2-pe, dada2-se, deblur-se)
 
 ### Input files
 
-Originally using SILVA 99% but now 97%.
+Below just shows the output of listing the directory contents:
 
 ```
-ls -l /home/luth1104/carter/tourmaline-bleaching/00-data
-manifest_pe.csv -> /home/luth1104/carter/fastq/manifest_bleaching_pe.csv
-manifest_se.csv -> /home/luth1104/carter/fastq/manifest_bleaching_se.csv
-metadata.tsv -> /home/luth1104/carter/metadata/14693_analysis_mapping_cleaned_bleaching.txt
+ls -l $HOME/carter/tourmaline-bleaching/00-data
+manifest_pe.csv -> $HOME/carter/fastq/manifest_bleaching_pe.csv
+manifest_se.csv -> $HOME/carter/fastq/manifest_bleaching_se.csv
+metadata.tsv -> $HOME/carter/metadata/14693_analysis_mapping_cleaned_bleaching.txt
 
-ls -l /home/luth1104/carter/tourmaline-bleaching/01-imported
-classifier.qza -> /home/luth1104/databases/qiime2/16s/silva_132_97_16S_classifier_7_levels.qza
+ls -l $HOME/carter/tourmaline-bleaching/01-imported
+classifier.qza -> $HOME/databases/qiime2/16s/silva_132_97_16S_classifier_7_levels.qza
 fastq_pe.qza
 fastq_se.qza
-refseqs.qza -> /home/luth1104/databases/qiime2/16s/silva_132_97_16S_sequences.qza
-reftax.qza -> /home/luth1104/databases/qiime2/16s/silva_132_97_16S_taxonomy_7_levels.qza
+refseqs.qza -> $HOME/databases/qiime2/16s/silva_132_97_16S_sequences.qza
+reftax.qza -> $HOME/databases/qiime2/16s/silva_132_97_16S_taxonomy_7_levels.qza
 
-ls -l /home/luth1104/carter/tourmaline-corallimorph/00-data
-manifest_pe.csv -> /home/luth1104/carter/fastq/manifest_corallimorph_pe.csv
-manifest_se.csv -> /home/luth1104/carter/fastq/manifest_corallimorph_se.csv
-metadata.tsv -> /home/luth1104/carter/metadata/14693_analysis_mapping_cleaned_corallimorph.txt
+ls -l $HOME/carter/tourmaline-corallimorph/00-data
+manifest_pe.csv -> $HOME/carter/fastq/manifest_corallimorph_pe.csv
+manifest_se.csv -> $HOME/carter/fastq/manifest_corallimorph_se.csv
+metadata.tsv -> $HOME/carter/metadata/14693_analysis_mapping_cleaned_corallimorph.txt
 
-ls -l /home/luth1104/carter/tourmaline-corallimorph/01-imported
-classifier.qza -> /home/luth1104/databases/qiime2/16s/silva_132_97_16S_classifier_7_levels.qza
+ls -l $HOME/carter/tourmaline-corallimorph/01-imported
+classifier.qza -> $HOME/databases/qiime2/16s/silva_132_97_16S_classifier_7_levels.qza
 fastq_pe.qza
 fastq_se.qza
-refseqs.qza -> /home/luth1104/databases/qiime2/16s/silva_132_97_16S_sequences.qza
-reftax.qza -> /home/luth1104/databases/qiime2/16s/silva_132_97_16S_taxonomy_7_levels.qza
+refseqs.qza -> $HOME/databases/qiime2/16s/silva_132_97_16S_sequences.qza
+reftax.qza -> $HOME/databases/qiime2/16s/silva_132_97_16S_taxonomy_7_levels.qza
 ```
 
 #### Config files
@@ -268,7 +176,7 @@ beta_group_column: coral_health_plus_year
 These were run in order. Note that snakemake output go to both standard output and standard error.
 
 ```
-ls /home/luth1104/carter/jobs
+ls $HOME/carter/jobs
 10_demux.pbs
 20_denoise.pbs
 30_diversity.pbs
